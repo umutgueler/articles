@@ -2,7 +2,7 @@ import { ErrorHandling } from "../helpers/error/ErrorHandling"
 
 export class Request {
     constructor() {
-        this.url = "/api"
+        this.url = "https://gulerumutarticles.herokuapp.com/api"
         this.errorHandling = new ErrorHandling();
 
 
