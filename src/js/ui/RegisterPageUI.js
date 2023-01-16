@@ -10,7 +10,7 @@ export class RegisterPageUI{
 
         const registerSection=document.createElement("section");
         registerSection.classList="bg-image pt-5 pb-5";
-        registerSection.style.backgroundImage="url(./img/register_bacground_image.png)";
+        registerSection.style.backgroundImage="url(https://res.cloudinary.com/dvdf3jgf9/image/upload/v1673886437/articles/PageImages/register_bacground_image_ufdkbk.png)";
 
         registerSection.innerHTML=`
         <div class="mask d-flex align-items-center h-100 gradient-custom-3 opacity-90">
