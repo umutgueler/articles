@@ -1,0 +1,32 @@
+{
+  "name": "articles_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umutgueler/articles.git"
+  },
+  "author": "Umut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umutgueler/articles/issues"
+  },
+  "homepage": "https://github.com/umutgueler/articles#readme",
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "navigo": "^8.11.1"
+    
+  }
+  
+}
