@@ -14,7 +14,7 @@ export default {
     https: false,
     proxy: {
       '/api': {
-        target: 'http://localhost:6006',
+        target: 'https://gulerumutarticles.herokuapp.com',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\//, ""),
