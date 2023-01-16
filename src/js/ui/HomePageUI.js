@@ -23,7 +23,7 @@ export class HomePageUI {
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-xl-block text-center"><img
-                                class="img-fluid border rounded-3 my-5" src="./img/header_img.png"
+                                class="img-fluid border rounded-3 my-5" src="https://res.cloudinary.com/dvdf3jgf9/image/upload/v1673886435/articles/PageImages/header_img_m7jmv2.png"
                                 alt="..." /></div>
                     </div>
                 </div>
