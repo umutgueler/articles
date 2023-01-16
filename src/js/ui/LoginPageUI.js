@@ -6,7 +6,7 @@ export class LoginPageUI {
     renderLoginPageUI() {
 
         const loginSection = document.createElement("section");
-        loginSection.style.backgroundImage = "url(./img/login_background_image.png)"
+        loginSection.style.backgroundImage = "url(https://res.cloudinary.com/dvdf3jgf9/image/upload/v1673886437/articles/PageImages/login_background_image_g3u4fj.png)"
         loginSection.style.backgroundRepeat = "no-repeat";
         loginSection.style.backgroundPosition = "center";
         loginSection.style.backgroundSize = "cover";
