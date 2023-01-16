@@ -233,7 +233,7 @@ export class UI {
 
     loginModal() {
         const loginSection = document.createElement("section");
-        loginSection.style.backgroundImage = "url(./img/login_background_image.png)"
+        loginSection.style.backgroundImage = "url(https://res.cloudinary.com/dvdf3jgf9/image/upload/v1673886435/articles/PageImages/header_img_m7jmv2.png)"
         loginSection.style.backgroundRepeat = "no-repeat";
         loginSection.style.backgroundPosition = "center";
         loginSection.style.backgroundSize = "cover";
