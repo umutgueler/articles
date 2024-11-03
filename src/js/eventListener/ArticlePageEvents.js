@@ -107,7 +107,6 @@ export class ArticlePageEvents {
 
 
         this.imageInputModal.addEventListener("change", () => {
-            console.log("denemeimageınputmodal")
             this.editArticleImageValidation();
         });
 
@@ -396,7 +395,6 @@ export class ArticlePageEvents {
             }
 
             const files = this.filesInputModal?.files;
-            console.log(files)
             if (files && files.length > 0) {
                 articleData.files = files;
                 const filenames = [];
@@ -404,7 +402,6 @@ export class ArticlePageEvents {
                 Array.from(filesNamesInputs).forEach((fileNameInput) => {
                     filenames.push(fileNameInput.value)
                 });
-                console.log(filenames)
                 filenames.every((e, index, arr) => {
                     if (arr.indexOf(e) != index) {
                         throw "Filenames Duplicate Error"
@@ -436,7 +433,6 @@ export class ArticlePageEvents {
             alertDiv.appendChild(spinner);
 
             this.ui.addChildElement(this.editArticleAlertDivModal, alertDiv);
-            console.log(articleData)
             const result = await this.articleRequest.editArticle(articleData, articleId);
 
             if (!result.success) {
@@ -458,7 +454,6 @@ export class ArticlePageEvents {
 
         }
         catch (err) {
-            console.log(err)
             const alertDiv = this.ui.alertDiv("danger", err)
             this.ui.addChildElement(this.editArticleAlertDivModal, alertDiv)
         }
@@ -467,7 +462,6 @@ export class ArticlePageEvents {
 
         const article = {}
         if (e.target.classList.contains("editArticleButton")) {
-            console.log("first")
             article.image = e.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.src;
             article._id = e.target.parentElement.parentElement.parentElement.id;
             article.name = e.target.parentElement.parentElement.parentElement.getAttribute("name");
@@ -639,7 +633,6 @@ export class ArticlePageEvents {
 
         }
         catch (err) {
-            console.log(err)
             const alert = this.ui.alertDiv("danger", err);
             this.ui.addChildElement(articlePageAlertDiv, alert)
         }
@@ -685,7 +678,6 @@ export class ArticlePageEvents {
         this.articlesDiv.appendChild(spinner);
 
         const articles = await this.articleRequest.getArticles(params);
-        console.log(articles)
         this.ui.clearElementInnerHTML(this.articlesDiv);
 
         await this.articlesDiv.appendChild(this.articlePageUI.articlesDiv(articles, userData));

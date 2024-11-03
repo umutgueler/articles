@@ -28,7 +28,6 @@ export class ErrorHandling {
 
         }
         catch (err) {
-            console.log(err)
             throw "An error occurred while connecting"
         }
     }
@@ -82,7 +81,6 @@ export class ErrorHandling {
     }
 
     authError() {
-        console.log("first")
         const ui = new UI();
         this.main.appendChild(ui.loginModal())
         const loginModalEvents = new LoginModalEvents();

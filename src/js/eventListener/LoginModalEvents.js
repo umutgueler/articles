@@ -113,7 +113,6 @@ export class LoginModalEvents {
 
         }
         catch (err) {
-            console.log(err)
 
             this.loginModalAlertDiv.innerHTML = "";
             const alertDiv = this.ui.alertDiv("danger", err);

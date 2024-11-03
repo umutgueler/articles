@@ -78,7 +78,6 @@ export class RegisterPageEvents {
 
         try {
             const userDataResult = await this.errorHandling.asyncErrorHandling(this.authRequest.registerUser(userData));
-            console.log(userDataResult);
             if (!userDataResult.success) {
                 if (userDataResult.message === "Duplicate Key Found") {
                     this.errorHandling.duplicateErorHandling(this.registerUserForm, userDataResult.data[0])
@@ -101,7 +100,6 @@ export class RegisterPageEvents {
             }, 2000)
         }
         catch (err) {
-            console.log(err)
             const alertDiv = this.ui.alertDiv("danger", err);
             this.ui.addChildElement(this.registerUserAlert, alertDiv, 6000)
         }

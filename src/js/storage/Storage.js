@@ -25,12 +25,10 @@ export class Storage {
 
     updateUserDataOnStroge(information){
         let userdata=JSON.parse(localStorage.getItem("userdata"));
-        console.log((information))
         userdata={
             ...userdata,
             ...information
         };
-        console.log(userdata)
 
         localStorage.setItem("userdata",JSON.stringify(userdata))
         

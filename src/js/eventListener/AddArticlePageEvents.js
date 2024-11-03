@@ -98,7 +98,6 @@ export class AddArticlePageEvents {
             this.ui.addChildElement(this.addArticleAlertDiv, alertDiv);
 
             const result = await this.articleRequest.addNewArticle(articleData);
-            console.log(result)
             if (!result.success) {
                 if (result.message === "Duplicate Key Found") {
                     this.errorHandling.duplicateErorHandling(this.addArticleForm, result.data[0])
@@ -115,7 +114,6 @@ export class AddArticlePageEvents {
 
         }
         catch (err) {
-            console.log(err)
             const alertDiv = this.ui.alertDiv("danger", err)
             this.ui.addChildElement(this.addArticleAlertDiv, alertDiv)
         }

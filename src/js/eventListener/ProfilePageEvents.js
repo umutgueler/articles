@@ -273,8 +273,6 @@ export class ProfilePageEventsListener {
 
             const successDiv = this.ui.alertDiv("success", "Image Upload Success");
             this.ui.addChildElement(this.imageModalAlert, successDiv);
-
-            console.log(userdata.data.profile_image);
             this.storage.updateUserDataOnStroge(userdata.data);
             bootstrap.Modal.getOrCreateInstance(this.imageProfileModal).hide();
             setTimeout(() => {
@@ -358,7 +356,6 @@ export class ProfilePageEventsListener {
 
         try {
             const userDataResult = await this.errorHandling.asyncErrorHandling(this.authRequest.editProfile(userData));
-            console.log(userDataResult);
             if (!userDataResult.success) {
                 if (userDataResult.message === "Duplicate Key Found") {
                     this.errorHandling.duplicateErorHandling(this.editUserProfileForm, userDataResult.data[0])
@@ -389,7 +386,6 @@ export class ProfilePageEventsListener {
     }
 
     activeEditProfile() {
-        console.log("clickevent")
         this.editUsersInputs.forEach((element) => {
 
             element.removeAttribute("disabled")

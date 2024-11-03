@@ -149,7 +149,6 @@ export class ArticleRequest extends Request {
         const body = JSON.stringify({
             files: files
         });
-        console.log(body)
         const access_token = this.storage.getUserDataStorage()?.access_token
         const headers = {
             "Authorization": `Bearer ${access_token}`,

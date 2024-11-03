@@ -2,14 +2,11 @@ import { ErrorHandling } from "../helpers/error/ErrorHandling"
 
 export class Request {
     constructor() {
-        this.url = "https://gulerumutarticles.herokuapp.com/api"
+        this.url = "https://national-marigold-umutguler-30d1e1ef.koyeb.app/api"
         this.errorHandling = new ErrorHandling();
 
 
     }
-
-
-
 
     async getReq(url, headers) {
         const init = {

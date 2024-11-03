@@ -249,7 +249,6 @@ export class ArticlePageUI {
             const articleComments = this.commentsDiv(article?.comments, 3, userData);
 
             const articleDiv = document.createElement("div");
-            console.log(article)
             articleDiv.classList = "card mb-4";
             articleDiv.id = article?._id
             articleDiv.setAttribute("name", article?.name)
@@ -362,7 +361,6 @@ export class ArticlePageUI {
 
         });
         const listGroupUl = `<ul class="list-group">${listGroup}</ul>`
-        console.log(listGroupUl)
         return listGroupUl;
     }
 

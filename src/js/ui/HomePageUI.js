@@ -35,7 +35,6 @@ export class HomePageUI {
         const mostLikedsData = this.mostLikedArticle.data;
 
         const mostCommentData = this.mostCommentArticle.data;
-        console.log(mostCommentData)
         this.theMost.classList = "py-5";
         let mostLikedsDivs = "";
 
